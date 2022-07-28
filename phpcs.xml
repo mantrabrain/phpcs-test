@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
 <ruleset name="WordPress Coding Standards">
-    <description>Yatra dev PHP CodeSniffer ruleset.</description>
+    <description>TestPHPCS dev PHP CodeSniffer ruleset.</description>
 
-    <file>./testphpcs/</file>
+    <file>./code/</file>
 
     <!-- Exclude paths -->
     <exclude-pattern>includes/deprecated/</exclude-pattern>
@@ -11,7 +11,7 @@
     <exclude-pattern>*/vendor/*</exclude-pattern>
 
     <!-- Show progress, show the error codes for each message (source). -->
-    <arg value="ps" />
+    <arg value="ps"/>
 
 
     <!-- Configs -->
@@ -50,7 +50,7 @@
     <!-- Custom rule properties -->
     <rule ref="WordPress.WP.I18n">
         <properties>
-            <property name="text_domain" type="array" value="yatra"/>
+            <property name="text_domain" type="array" value="phpcs-test"/>
         </properties>
     </rule>
 
