@@ -43,7 +43,7 @@ function runTests() {
 
   composer install
 
-  vendor/bin/phpcs
+  vendor/bin/phpcs -p -s ./code/
 }
 
 ##
