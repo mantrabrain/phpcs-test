@@ -17,8 +17,7 @@
     <!-- Configs -->
     <config name="minimum_supported_wp_version" value="4.7"/>
     <config name="testVersion" value="8.0-"/>
-    <config name="installed_paths" value="vendor/phpcompatibility/phpcompatibility-wp"/>
-    <!-- PHPCompatibility -->
+     <!-- PHPCompatibility -->
     <rule ref="PHPCompatibility">
         <exclude-pattern>tests/</exclude-pattern>
     </rule>
