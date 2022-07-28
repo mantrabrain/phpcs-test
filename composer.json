@@ -1,0 +1,39 @@
+{
+  "name": "mantrabrain/phpcstest",
+  "description": "PHPCS Test.",
+  "homepage": "https://mantrabrain.com/plugins/phpcstest/",
+  "type": "wordpress-plugin",
+  "license": "GPL-3.0-or-later",
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "authors": [
+    {
+      "name": "mantrabrain",
+      "email": "mantrabrain@gmail.com"
+    }
+  ],
+  "config": {
+    "process-timeout": 0,
+    "sort-packages": true,
+    "allow-plugins": {
+      "dealerdirect/phpcodesniffer-composer-installer": true
+    }
+  },
+  "require": {
+    "php": ">=5.6.20"
+  },
+  "require-dev": {
+    "wp-coding-standards/wpcs": "dev-master",
+    "dealerdirect/phpcodesniffer-composer-installer": "dev-master",
+    "phpcompatibility/phpcompatibility-wp": "dev-master",
+    "phpunit/phpunit": ">=5.7.27"
+  },
+  "scripts": {
+    "phpcs": [
+      "phpcs -p -s"
+    ],
+    "phpcbf": [
+      "phpcbf -p"
+    ]
+  }
+}
